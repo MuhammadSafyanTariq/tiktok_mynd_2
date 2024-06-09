@@ -116,7 +116,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           : const CircleAvatar(
                               radius: 100,
                               backgroundImage: AssetImage(
-                                'assets/Bunny.png',
+                                'assets/logo.png',
                               ),
                             ),
                     ],

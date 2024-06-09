@@ -2,12 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_icon_class/font_awesome_icon_class.dart';
-import 'package:insta_clone/Resource/Auth_Methods.dart';
 import 'package:insta_clone/Resource/FireStore_methods.dart';
-import 'package:insta_clone/Screens/login_Screen.dart';
-import 'package:insta_clone/Widgets/custom_button.dart';
 import 'package:insta_clone/Widgets/follow_button.dart';
-import 'package:insta_clone/utils/colors.dart';
 import 'package:insta_clone/utils/utils.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -106,17 +102,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
           )
         : Scaffold(
             appBar: PreferredSize(
-              preferredSize: Size(double.infinity, 50),
+              preferredSize: const Size(double.infinity, 50),
               child: AppBar(
                 backgroundColor: Colors.white,
                 // elevation: 10,
 
-                title: Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
+                title: const Padding(
+                  padding: EdgeInsets.only(bottom: 20),
                   child: Row(
                     children: [
                       Image(
-                        image: AssetImage('assets/mynd.png'),
+                        image: AssetImage('assets/logo.png'),
                         height: 30,
                       ),
                       SizedBox(
@@ -151,7 +147,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Divider(
+                          const Divider(
                             color: Colors.black54,
                           ),
                           Text(
@@ -175,7 +171,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               color: Colors.black.withOpacity(0.6),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           CircleAvatar(
@@ -185,10 +181,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             radius: 50,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Spacer(),
                               SizedBox(

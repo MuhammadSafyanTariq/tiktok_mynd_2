@@ -73,17 +73,30 @@ class _LoginScreenState extends State<LoginScreen> {
                 backButton: false,
                 title: "Sign In",
               ),
-              const Spacer(),
+              // const Spacer(),
+              SizedBox(
+                height: 50,
+              ),
+              Image(
+                image: AssetImage(
+                  'assets/logo2.png',
+                ),
+                height: 200,
+              ),
+              SizedBox(
+                height: 50,
+              ),
+
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       ' Please enter the email',
                       style: TextStyle(fontSize: 15, color: Colors.black87),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     TextInputFeilds(
@@ -94,16 +107,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    Text(
-                      ' Please enter the email',
+                    const Text(
+                      ' Please enter the password',
                       style: TextStyle(fontSize: 15, color: Colors.black87),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     TextInputFeilds(
                       textEditingController: _passwordController,
-                      hintText: "Please enter the password",
+                      hintText: "Password",
                       isPass: true,
                       textInputType: TextInputType.visiblePassword,
                     ),

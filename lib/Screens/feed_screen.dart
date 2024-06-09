@@ -23,7 +23,7 @@ class FeedScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Image(
-                    image: AssetImage('assets/mynd.png'),
+                    image: AssetImage('assets/logo.png'),
                     height: 30,
                   ),
                   SizedBox(
